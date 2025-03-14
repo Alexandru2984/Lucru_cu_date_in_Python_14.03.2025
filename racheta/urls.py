@@ -17,9 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from django.http import HttpResponse
-def zile_pana_la_lansare(request):
-    return HttpResponse('Mai sunt 10 zile')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),

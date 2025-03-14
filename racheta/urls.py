@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-
+from lansator.views import zile_pana_la_lansare, nume_racheta_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('lansare/', zile_pana_la_lansare)
+    path('lansare/', zile_pana_la_lansare),
+    path('nume/', nume_racheta_view),
 ]
